@@ -1,0 +1,213 @@
+<!--  
+Table kya hota hai?
+
+table ek structure hota hai jisko aap rows aaur columns ke form mei store krte hai
+
+horizonal direction mei rows hoti hai
+vertical direction mei columns hoti hai
+
+table tag starting tag hai
+th tag header ke liye use hota hai
+tbody tag body ke liye use hota hai
+tfoot tag footer ke liye use hota hai
+tr tag row ke liye use hota hai
+td tag data ke liye use hota hai
+table tag ke andar aap th, tbody, tfoot, tr, td tags ka use
+krte hai
+
+agr mai upar wale row ko expand krna chahu neeche tak toh kuch properties ka
+use krna pdega jaise ki rowspan ka use krke aur column wose expand krne ke liye
+colspan ka use krte hai
+
+
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Age</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Shushant</td>
+                <td>Male</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Rahul</td>
+                <td>Male</td>
+                <td rowspan="3">20</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Aditya</td>
+                <td>Male</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <br>
+
+    <table border="1">
+        <thead>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Row 1</td>
+                <td>Data 1</td>
+                <td>Data 1</td>
+            </tr>
+            <tr>
+                <td>Data 2</td>
+                <td>Data 2</td>
+            </tr>
+            <tr>
+                <td colspan="3">Row 3</td>
+                
+            </tr>
+        </tbody>
+
+    </table>
+    <br>
+    <br>
+    <table border="1">
+        <thead font-styyle="bold">
+            <th>No.</th>
+            <th>Full Name</th>
+            <th>Position</th>
+            <th>Salary</th>
+            <th>Type</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>John Doe</td>
+                <td>Software Engineer</td>
+                <td>$80,000</td>
+                <td rowspan="3">Software Engineer</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Jane Smith</td>
+                <td>Data Scientist</td>
+                <td>$95,000</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Emily Johnson</td>
+                <td>Product Manager</td>
+                <td>$120,000</td>
+            </tr>
+            
+        </tbody>
+
+        <tfoot>
+                <tr>
+                    <td colspan="3" style="text-align: center;">Total Expenses</td>
+                    <td>$295,000</td>
+                </tr>
+            </tfoot>
+    </table>
+    <br><br>
+    <table border="1">
+        <thead>
+            <th>Country</th>
+            <th>State</th>
+            <th>City</th>
+            <th>Street</th>
+            <th>Male</th>
+            <th>Female</th>
+            <th>Other</th>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="8">1</td>
+                <td rowspan="4">Kerala</td>
+                <td rowspan="2">Cochin</td>
+                <td>New Street</td>
+                <td>500</td>
+                <td>600</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Old Street</td>
+                <td>400</td>
+                <td>500</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Trivandrum</td>
+                <td>Guru Street</td>
+                <td>500</td>
+                <td>600</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>TVK Street</td>
+                <td>500</td>
+                <td>600</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td rowspan="4">Maharashtra</td>
+                <td rowspan="2">Pune</td>
+                <td>MG Road</td>
+                <td>600</td>
+                <td>700</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>New Street</td>
+                <td>800</td>
+                <td>900</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Mumbai</td>
+                <td>Marine Drive</td>
+                <td>800</td>
+                <td>900</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Surath</td>
+                <td>500</td>
+                <td>600</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td rowspan="2">2</td>
+                <td rowspan="2">Alaska</td>
+                <td rowspan="2">Aka central</td>
+                <td>New Street</td>
+                <td>500</td>
+                <td>600</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Old Street</td>
+                <td>400</td>
+                <td>500</td>
+                <td>10</td>
+        </tbody>
+    </table>
+    
+</body>
+</html>
